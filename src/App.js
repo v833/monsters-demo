@@ -1,7 +1,7 @@
 import Demo from './components/Demo.js'
 
 function App() {
-  return <Demo></Demo>
+  return <Demo />
 }
 
 export default App
