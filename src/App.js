@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CardList from './components/card-list/card-list.component'
 import SearchBox from './components/search-box/serch-box.component'
+import './App.css'
 
 class App extends Component {
   state = {
@@ -31,16 +32,9 @@ class App extends Component {
       return item.name.toLocaleLowerCase().includes(searchField)
     })
     return (
-      <main
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
+      <main>
         <SearchBox
-          className={'search-box'}
+          className={'monsters-search-box'}
           onChangeHandler={onSearchChange}
           placeholder={'search monsters'}
         ></SearchBox>
